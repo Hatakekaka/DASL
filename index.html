@@ -6,13 +6,13 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Dual-Process Atomic Skill Learning for Long-Horizon Manipulation Tasks - Jun Chen*, Erdemt Bao*, Wenlong Dong, Jierui Liu, Hao Wan, Shaopeng Li, Weijun Qin,, Jing Liang, Huiping Zhuang†.">
+  <meta name="title" content="Dual-Process Atomic Skill Learning for Long-Horizon Manipulation Tasks">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Jun Chen*, Erdemt Bao*, Wenlong Dong, Jierui Liu, Hao Wan, Shaopeng Li, Weijun Qin,, Jing Liang, Huiping Zhuang†.">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -241,7 +241,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Dual-Process Atomic Skill Learning for Long-Horizon Manipulation Tasks</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -341,7 +341,21 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Language-conditioned Imitation Learning (IL)
+            is essential for enabling robots to perform complex tasks following natural language instructions.
+            However, executing long-horizon tasks sequentially remains a significant challenge. While hierarchical approaches attempt to address this by decomposing tasks into atomic skills, existing methods often suffer from training instability and codebook collapse due to the tight coupling between
+            high-level skill reasoning and low-level action
+            generation. Inspired by the Dual-Process Theory
+            of cognition, we propose DASL, a novel asynchronous hierarchical imitation learning framework that effectively decouples slow, semantic reasoning from fast, real-time motion control. DASL
+            comprises a Slow-Frequency Policy that predicts
+            interpretable, discrete skills via Vector Quantization, and a High-Frequency Policy that leverages
+            a diffusion model and Decision Transformer to
+            generate precise actions conditioned on these latent skills. By asynchronously coordinating these
+            modules, our framework mitigates the interference common in synchronous co-training without
+            relying on complex auxiliary regularization. Extensive evaluations on robotic manipulation and
+            grid-world navigation benchmarks demonstrate
+            that DASL significantly outperforms state-of-theart baselines, particularly in skill acquisition and
+            compositional generalization to unseen instructions. We will share our source code on GitHub.
           </p>
         </div>
       </div>
