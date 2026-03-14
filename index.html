@@ -77,8 +77,8 @@
   <title>Dual-Process Atomic Skill Learning for Long-Horizon Manipulation Tasks - Jun Chen*, Erdemt Bao*, Wenlong Dong, Jierui Liu, Hao Wan, Shaopeng Li, Weijun Qin,, Jing Liang, Huiping Zhuang†. | Academic Research</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -273,9 +273,9 @@
                       <sup>3</sup> Southern University of Science and Technology<br>
                       <sup>4</sup> South China University of Technology<br>
                       <sup>5</sup> EbTech Co. Ltd.</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>†</sup>Corresponding authors</small></span>
-                    <span class="in-submission-line" style="display:block; font-style:normal; font-size:1.5rem; color:inherit; margin-top:0.35rem;">In submission</span>
+                    <!-- TODO: Remove this line if no equal contribution</small> -->
+                    <span class="eql-cntrb"><br><sup>*</sup>Indicates Equal Contribution, <sup>†</sup>Corresponding authors</span>
+                    <span class="in-submission-line" style="display:block; font-style:normal; font-size:1.5rem; color:inherit; margin-top:0.35rem;">Under review</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -331,222 +331,177 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero is-light paper-style abstract-section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Language-conditioned Imitation Learning (IL)
-            is essential for enabling robots to perform complex tasks following natural language instructions.
-            However, executing long-horizon tasks sequentially remains a significant challenge. While hierarchical approaches attempt to address this by decomposing tasks into atomic skills, existing methods often suffer from training instability and codebook collapse due to the tight coupling between
-            high-level skill reasoning and low-level action
-            generation. Inspired by the Dual-Process Theory
-            of cognition, we propose DASL, a novel asynchronous hierarchical imitation learning framework that effectively decouples slow, semantic reasoning from fast, real-time motion control. DASL
-            comprises a Slow-Frequency Policy that predicts
-            interpretable, discrete skills via Vector Quantization, and a High-Frequency Policy that leverages
-            a diffusion model and Decision Transformer to
-            generate precise actions conditioned on these latent skills. By asynchronously coordinating these
-            modules, our framework mitigates the interference common in synchronous co-training without
-            relying on complex auxiliary regularization. Extensive evaluations on robotic manipulation and
-            grid-world navigation benchmarks demonstrate
-            that DASL significantly outperforms state-of-theart baselines, particularly in skill acquisition and
-            compositional generalization to unseen instructions. We will share our source code on GitHub.
-          </p>
-        </div>
+    <div class="content-paper">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content">
+        <p>
+          Language-conditioned Imitation Learning (IL)
+          is essential for enabling robots to perform complex tasks following natural language instructions.
+          However, executing long-horizon tasks sequentially remains a significant challenge. While hierarchical approaches attempt to address this by decomposing tasks into atomic skills, existing methods often suffer from training instability and codebook collapse due to the tight coupling between
+          high-level skill reasoning and low-level action
+          generation. Inspired by the Dual-Process Theory
+          of cognition, we propose DASL, a novel asynchronous hierarchical imitation learning framework that effectively decouples slow, semantic reasoning from fast, real-time motion control. DASL
+          comprises a Slow-Frequency Policy that predicts
+          interpretable, discrete skills via Vector Quantization, and a High-Frequency Policy that leverages
+          a diffusion model and Decision Transformer to
+          generate precise actions conditioned on these latent skills. By asynchronously coordinating these
+          modules, our framework mitigates the interference common in synchronous co-training without
+          relying on complex auxiliary regularization. Extensive evaluations on robotic manipulation and
+          grid-world navigation benchmarks demonstrate
+          that DASL significantly outperforms state-of-the-art baselines, particularly in skill acquisition and
+          compositional generalization to unseen instructions. We will share our source code on GitHub.
+        </p>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Framework of DASL -->
+<section class="section hero is-light paper-style">
+  <div class="container is-max-desktop">
+    <div class="content-paper">
+      <h2 class="title is-3">Framework of DASL</h2>
+      <figure class="figure-clean figure-flat table-figure large">
+        <img src="static/images/framwork.png" alt="DASL framework overview" />
+        <!-- <figcaption>Fig. 1 Overview of DASL</figcaption> -->
+      </figure>
+      <p>
+        Overview of DASL.an asynchronous hierarchical imitation learning framework. The high-level policy operates at a slow
+        timescale to generate discrete semantic skills from language instructions and sparse observations, while the low-level policy executes
+        skill-conditioned actions at a fast timescale. A latent diffusion module regularizes the latent trajectory space during training and is
+        removed at inference for efficient real-time control.
+      </p>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Framework -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+<!-- Results -->
+<section class="section hero is-light paper-style results-section">
+  <div class="container is-max-desktop">
+    <div class="content-paper">
+      <h2 class="title is-3">Results</h2>
+      <h3 class="subheading">Performance on LOReL Sawyer</h3>
+      <figure class="figure-clean table-figure large">
+        <img src="static/images/table1.png" alt="Performance on LOReL Sawyer" loading="lazy"/>
+        <figcaption>Table.1 Rephrasal-wise success rates (%) on LOReL Sawyer</figcaption>
+      </figure>
+      <figure class="figure-clean figure-5images">
+        <div class="five-images-container">
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_state_01.png" alt="LOReL State 1" loading="lazy"/><span class="img-label">(a)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_state_02.png" alt="LOReL State 2" loading="lazy"/><span class="img-label">(b)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_state_03.png" alt="LOReL State 3" loading="lazy"/><span class="img-label">(c)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_state_04.png" alt="LOReL State 4" loading="lazy"/><span class="img-label">(d)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_state_05.png" alt="LOReL State 5" loading="lazy"/><span class="img-label">(e)</span></div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+        <figcaption>Fig.1 LOReL State: open drawer and move black mug right</figcaption>
+      </figure>
+      <figure class="figure-clean figure-5images">
+        <div class="five-images-container">
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_img_01.png" alt="LOReL Image 1" loading="lazy"/><span class="img-label">(a)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_img_02.png" alt="LOReL Image 2" loading="lazy"/><span class="img-label">(b)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_img_03.png" alt="LOReL Image 3" loading="lazy"/><span class="img-label">(c)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_img_04.png" alt="LOReL Image 4" loading="lazy"/><span class="img-label">(d)</span></div>
+          <div class="image-item"><img src="static/images/lorel_viz/lorel_img_05.png" alt="LOReL Image 5" loading="lazy"/><span class="img-label">(e)</span></div>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
+        <figcaption>Fig.2 LOReL Image: turn faucet right and close drawer</figcaption>
+      </figure>
+      <h3 class="subheading">Performance on Franka Kitchen</h3>
+      <div class="figure-row">
+        <figure class="figure-clean table-figure">
+          <img src="static/images/table2.png" alt="Performance on Franka Kitchen" loading="lazy"/>
+          <figcaption>Table.2 N-rates of different methods on seen and unseen instructions in Kitchen with state and image observation.</figcaption>
+        </figure>
+        <figure class="figure-clean table-figure">
+          <img src="static/images/fig1.png" alt="Fig1 visualization" loading="lazy"/>
+          <figcaption class="caption-nowrap">Fig.3 K-rates on seen and unseen tasks in Kitchen (image)</figcaption>
+        </figure>
       </div>
+      <figure class="figure-clean figure-7images">
+        <div class="seven-images-container">
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_01.jpg" alt="Kitchen State 1" loading="lazy"/><span class="img-label">(a)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_02.jpg" alt="Kitchen State 2" loading="lazy"/><span class="img-label">(b)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_03.jpg" alt="Kitchen State 3" loading="lazy"/><span class="img-label">(c)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_04.jpg" alt="Kitchen State 4" loading="lazy"/><span class="img-label">(d)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_05.jpg" alt="Kitchen State 5" loading="lazy"/><span class="img-label">(e)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_06.jpg" alt="Kitchen State 6" loading="lazy"/><span class="img-label">(f)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_state_07.jpg" alt="Kitchen State 7" loading="lazy"/><span class="img-label">(g)</span></div>
+        </div>
+        <figcaption class="caption-nowrap">Fig.4 Kitchen State: activate bottom burner and activate top burner and turn on light switch and open sliding cabinet</figcaption>
+      </figure>
+      <figure class="figure-clean figure-7images">
+        <div class="seven-images-container">
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_01.jpg" alt="Kitchen Image 1" loading="lazy"/><span class="img-label">(a)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_02.jpg" alt="Kitchen Image 2" loading="lazy"/><span class="img-label">(b)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_03.jpg" alt="Kitchen Image 3" loading="lazy"/><span class="img-label">(c)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_04.jpg" alt="Kitchen Image 4" loading="lazy"/><span class="img-label">(d)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_05.jpg" alt="Kitchen Image 5" loading="lazy"/><span class="img-label">(e)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_06.jpg" alt="Kitchen Image 6" loading="lazy"/><span class="img-label">(f)</span></div>
+          <div class="image-item"><img src="static/images/kitchen_viz/kitchen_image_07.jpg" alt="Kitchen Image 7" loading="lazy"/><span class="img-label">(g)</span></div>
+        </div>
+        <figcaption class="caption-nowrap">Fig.5 Kitchen Image: activate bottom burner and activate top burner and turn on light switch and open sliding cabinet</figcaption>
+      </figure>
+      <h3 class="subheading">Performance on BabyAI</h3>
+      <figure class="figure-clean table-figure">
+        <img src="static/images/babyai_gotoseq_bar.png" alt="Performance on BabyAI" loading="lazy"/>
+        <figcaption>Fig.6 Success rates (%) on BabyAI GoToSeq task with varying numbers of demonstrations.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Results -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+<!-- Interpretability Analysis -->
+<section class="section hero is-light paper-style">
+  <div class="container is-max-desktop">
+    <div class="content-paper">
+      <h2 class="title is-3">Interpretability Analysis</h2>
+      <figure class="figure-clean table-figure">
+        <img src="static/images/latent_dist_close_drawer_turn_faucet.png" alt="Latent distribution visualization" loading="lazy"/>
+        <figcaption>Fig.7 Visualization of Latent Skill Distributions</figcaption>
+      </figure>
+      <figure class="figure-clean table-figure wider">
+        <img src="static/images/eval_comp_wordclouds_combined.png" alt="Word clouds comparison" loading="lazy"/>
+        <figcaption>Fig.8 Word cloud of skills learned in LOReL Sawyer (state) compositional task</figcaption>
+      </figure>
+      <figure class="figure-clean table-figure wide">
+        <img src="static/images/eval_comp_correlation_matrix.png" alt="Correlation matrix" loading="lazy"/>
+        <figcaption>Fig.9 Skill heatmap visualization for LOReL on Sawyer (state) compositional tasks</figcaption>
+      </figure>
+      <figure class="figure-clean table-figure wide">
+        <img src="static/images/eval_comp_option_freq_matrix.png" alt="Option frequency matrix" loading="lazy"/>
+        <figcaption>Fig.10 Skill heatmap visualization for LOReL on Sawyer (state) compositional tasks (normalized row-wise)</figcaption>
+      </figure>
+      <figure class="figure-clean table-figure wide">
+        <img src="static/images/eval_comp_word_freq_matrix.png" alt="Word frequency matrix" loading="lazy"/>
+        <figcaption>Fig.11 Skill heatmap visualization for LOReL on Sawyer (state) compositional tasks (normalized column-wise)</figcaption>
+      </figure>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End Interpretability Analysis -->
 
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+<!-- BibTeX -->
+<section class="section hero is-light paper-style">
+  <div class="container is-max-desktop">
+    <div class="content-paper">
+      <h2 class="title is-3">Bibtex</h2>
+      <pre><code>@inproceedings{Chen2026DASL,
+  title     = {Dual-Process Atomic Skill Learning for Long-Horizon Manipulation Tasks},
+  author    = {Jun Chen, Erdemt Bao, Wenlong Dong, Jierui Liu, Hao Wan, Shaopeng Li, Weijun Qin, Jing Liang, Huiping Zhuang},
+  booktitle = {},
+  year      = {2026}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
   </div>
-</footer>
+</section>
+<!-- End BibTeX -->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
+</main>
 
   </body>
   </html>

@@ -749,5 +749,314 @@ a:focus {
   }
 }
 
+/* ========== Clean paper style (简洁风) ========== */
+/* 统一内容区宽度，避免 Results 等区块过窄 */
+.content-paper {
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Abstract: 标题居中，与红框同宽 */
+.abstract-section .content-paper {
+  max-width: 960px;
+  width: 100%;
+}
+.abstract-section .content-paper .title.is-3 {
+  text-align: center !important;
+}
+
+.content-paper .title.is-3 {
+  text-align: left !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0 !important;
+}
+
+.content-paper .title.is-3::after {
+  display: none !important;
+}
+
+.content-paper .content p {
+  text-align: justify;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Figure: image + caption */
+.figure-clean {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.figure-clean.table-figure {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.figure-clean.table-figure.large {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figure-clean.table-figure.wide {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-clean.table-figure.wider {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-section .figure-clean {
+  margin: 1rem auto 0.5rem;
+}
+
+.figure-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+/* 缩小标题与下方 figure-row 的间距 */
+.content-paper .subheading + .figure-row {
+  margin-top: 0.15rem;
+}
+
+.figure-row figure {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figure-row figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 平铺展示、无边框（PDF/iframe） */
+.figure-flat object,
+.figure-flat iframe {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: #fff;
+}
+
+.figure-clean img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.figure-clean:not(.table-figure) img {
+  display: inline-block;
+  vertical-align: top;
+  width: 19%;
+  margin: 0 0.5%;
+}
+
+/* 5 images in a row */
+.figure-5images {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+}
+
+.figure-5images .five-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.figure-5images .image-item {
+  position: relative;
+  flex: 1;
+  max-width: 220px;
+  text-align: center;
+}
+
+.figure-5images .image-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.figure-5images .img-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.25rem;
+}
+
+.figure-5images figcaption {
+  margin-top: 0.75rem;
+}
+
+/* 7 images in a row */
+.figure-7images {
+  max-width: 1400px;
+  margin: 1.5rem auto;
+}
+
+.figure-7images .seven-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.figure-7images .image-item {
+  position: relative;
+  flex: 1;
+  max-width: 180px;
+  text-align: center;
+}
+
+.figure-7images .image-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.figure-7images .img-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.2rem;
+}
+
+.figure-7images figcaption {
+  margin-top: 0.75rem;
+}
+
+.figure-clean figcaption {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.figure-clean figcaption.caption-nowrap {
+  white-space: nowrap;
+}
+
+/* Subheading under Results */
+.content-paper .subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+  text-align: left;
+}
+
+/* Table: clean borders */
+.table-clean {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.table-clean caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 0 0 0.75rem 0;
+}
+
+.table-clean.table-bordered {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-clean.table-bordered th,
+.table-clean.table-bordered td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.table-clean.table-bordered th {
+  font-weight: 600;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.table-clean.table-bordered tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-clean.table-bordered tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* Paper sections: white background, generous spacing */
+.section.paper-style .hero-body,
+.section.hero.is-light.paper-style {
+  background: #ffffff !important;
+  border: none !important;
+}
+
+.section.paper-style .container.is-max-desktop {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Results：表格与内容铺满容器宽度 */
+.results-section .content-paper {
+  width: 100%;
+}
+.results-section .table-clean {
+  width: 100%;
+  table-layout: auto;
+}
+
+.results-section .table-clean.table-bordered {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section.paper-style {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section.paper-style .hero-body {
+  padding: 2rem 1.5rem;
+}
+
 
 
